@@ -1,0 +1,87 @@
+.overlay {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#202431+0,202431+50,202431+100&0.6+0,0+51,1+100 */
+    background: -moz-linear-gradient(top, rgba(32,36,49,1) 0%, rgba(32,36,49,0.01) 50%, rgba(32,36,49,0) 51%, rgba(32,36,49,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(32,36,49,1) 0%,rgba(32,36,49,0.01) 50%,rgba(32,36,49,0) 51%,rgba(32,36,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(32,36,49,1) 0%,rgba(32,36,49,0.01) 50%,rgba(32,36,49,0) 51%,rgba(32,36,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99202431', endColorstr='#202431',GradientType=0 ) /* IE6-9 */;
+    background-size: cover;
+    height: 100%;
+    z-index: 5;
+    padding: 0 0 0 350px;
+}
+
+.overlayDark {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#202431+0,202431+50,202431+100&0.6+0,0+51,1+100 */
+    background: -moz-linear-gradient(top, rgba(32,36,49,1) 0%, rgba(32,36,49,0.3) 50%, rgba(32,36,49,0.3) 51%, rgba(32,36,49,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(32,36,49,1) 0%,rgba(32,36,49,0.3) 50%,rgba(32,36,49,0.3) 51%,rgba(32,36,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(32,36,49,1) 0%,rgba(32,36,49,0.3) 50%,rgba(32,36,49,00.3) 51%,rgba(32,36,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99202431', endColorstr='#202431',GradientType=0 ) /* IE6-9 */;
+    background-size: cover;
+    height: 100%;
+    z-index: 5;
+    padding: 0 0 0 350px;
+}
+
+#homebanner {
+    background-image: url(../img/homebanner.jpg);
+}
+
+#aboutbanner {
+    background-image: url(../img/about.jpg);
+}
+
+#accomodationbanner {
+    background-image: url(../img/accomodation.jpg);
+}
+
+#auroraborealis {
+    background-image: url(../img/auroraborealis.jpg);
+}
+
+#contact, #contactbanner {
+    background-image: url(../img/contact.jpg);
+}
+
+#tripsbanner {
+    background-image: url(../img/premadetrips.jpg);
+}
+
+#denmarkbanner {
+    background-image: url(../img/denmark.jpg);
+}
+
+#faroeislandsbanner {
+    background-image: url(../img/faroeislands.jpg);
+}
+
+#finlandbanner {
+    background-image: url(../img/finland.jpg);
+}
+
+#greenlandbanner {
+    background-image: url(../img/greenland.jpg);
+}
+
+#icelandbanner {
+    background-image: url(../img/iceland.jpg);
+}
+
+#norwaybanner {
+    background-image: url(../img/norway.jpg);
+}
+
+#scotlandbanner {
+    background-image: url(../img/scotland.jpg);
+}
+
+#swedenbanner {
+    background-image: url(../img/sweden.jpg);
+}
+
+#countriesbanner {
+    background-image: url(../img/countries1.jpg);
+}
+
+#trolltungabanner {
+    background-image: url(../img/trolltunga.png);
+}
