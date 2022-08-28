@@ -13,7 +13,8 @@ class App extends Component {
   selectCountryHandler = (event) => {
     this.setState({
       value: event.target.value
-    })
+    });
+  //let Destination = event.target.value; 
     ReactDOM.render(<Norway />, document.getElementById('places'));
   }
 

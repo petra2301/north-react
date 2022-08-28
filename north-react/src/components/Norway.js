@@ -40,18 +40,13 @@ class Norway extends Component {
                 )
         }
 
-
-
-
-        
-
     render() {
         const { error, isLoaded, places } = this.state;
 
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
-            return <div><p className="centered">Loading...</p></div>;
+            return <div><p className="text-center">Loading...</p></div>;
         } else {
             let itemContainer = [];
           for (let i = 0; i < this.state.places.length; i++) {
