@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
+import './css/bootstrap.css';
 import './css/style.css';
 import './css/components.css';
 
-import Norway from './components/Norway'
+import Countries from "./components/Countries";
 
 class App extends Component {
   state = {
@@ -14,8 +15,14 @@ class App extends Component {
     this.setState({
       value: event.target.value
     });
-  //let Destination = event.target.value; 
-    ReactDOM.render(<Norway />, document.getElementById('places'));
+    ReactDOM.unmountComponentAtNode(document.getElementById('places'));
+    let countryName = event.target.value
+    ReactDOM.render(<Countries countryName={countryName}/>, document.getElementById('places'));
+  // if (event.target.value === "Norway") {
+  //   ReactDOM.render(<Norway />, document.getElementById('places'));
+  // } else if (event.target.value === "Denmark") {
+  //   ReactDOM.render(<Denmark />, document.getElementById('places'));
+  // }
   }
 
   render() {
