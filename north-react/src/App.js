@@ -18,11 +18,6 @@ class App extends Component {
     ReactDOM.unmountComponentAtNode(document.getElementById('places'));
     let countryName = event.target.value
     ReactDOM.render(<Countries countryName={countryName}/>, document.getElementById('places'));
-  // if (event.target.value === "Norway") {
-  //   ReactDOM.render(<Norway />, document.getElementById('places'));
-  // } else if (event.target.value === "Denmark") {
-  //   ReactDOM.render(<Denmark />, document.getElementById('places'));
-  // }
   }
 
   render() {
@@ -44,8 +39,16 @@ class App extends Component {
         </select>
         <button>Let's go!</button>
 
+        <div id="bucketlist">
+
+        </div>
+
         <p>The selected country is {this.state.value}.</p>
         <div id="places"></div>
+        <div>
+          <p>Still can't find what you're looking for? Check out our roadtrips for inspiration!</p>
+          <button>See roadtrips</button>
+        </div>
       </div>
     );
   }

@@ -8,6 +8,14 @@ class Countries extends Component {
         places: []
     };
 
+    addToBucketlist = (event, countryName, placeName) => {
+      let bucketlistItem = document.createElement('div');
+      bucketlistItem.innerHTML = `<p>${placeName}</p>
+                                  <p class="small">${countryName}</p>`;
+      console.log(bucketlistItem)
+      document.getElementById('bucketlist').appendChild(bucketlistItem);
+    };
+
     componentDidMount() {
       
             fetch(`https://bucketlist-cd32.restdb.io/rest/${this.props.countryName}`, {
@@ -38,6 +46,8 @@ class Countries extends Component {
         }
 
         render() {
+          
+
           const { error, isLoaded, places } = this.state;
   
           if (error) {
@@ -51,7 +61,7 @@ class Countries extends Component {
               
           } else {
   
-              let itemContainer = [];
+            let itemContainer = [];
             for (let i = 0; i < this.state.places.length; i++) {
               let data = {
                 "id": this.state.places[i]._id,
@@ -63,10 +73,15 @@ class Countries extends Component {
   
               return (
                 
-                  //console.log(this.state.places[1].name)
                   <div>
-                    
-                      {places.map(place => <p>{place.name}</p>)}
+                      {places.map(place => (
+                      <div >
+                        <p>{place.name}</p>
+                        <button id={this.props.countryName + "_" + place.name} onClick={(event) => this.addToBucketlist(event, this.props.countryName, place.name)}>Add to bucketlist</button>
+                      </div>
+                      )
+                      )
+                      }
                   </div>
                 );
   
