@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+import BucketlistItem from './BucketlistItem';
 
 class Countries extends Component {
 
@@ -9,11 +12,7 @@ class Countries extends Component {
     };
 
     addToBucketlist = (event, countryName, placeName) => {
-      let bucketlistItem = document.createElement('div');
-      bucketlistItem.innerHTML = `<p>${placeName}</p>
-                                  <p class="small">${countryName}</p>`;
-      console.log(bucketlistItem)
-      document.getElementById('bucketlist').appendChild(bucketlistItem);
+      ReactDOM.render(<BucketlistItem country={countryName} place={placeName}/>, document.getElementById('bucketlist'));
     };
 
     componentDidMount() {

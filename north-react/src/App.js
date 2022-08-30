@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './css/bootstrap.css';
 import './css/style.css';
 import './css/components.css';
+import './fontawesome-6/css/all.css';
 
 import Countries from "./components/Countries";
 
